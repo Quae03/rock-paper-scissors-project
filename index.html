@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        .resultsDiv {
+            border: 1px black solid;
+            display: none;
+            /* Hiding the div until there are results to display */
+            padding: 5px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="rockBtn" onclick="playRound(getUserChoice(this), getComputerChoice())">Rock</button>
+        <button id="paperBtn" onclick="playRound(getUserChoice(this), getComputerChoice())">Paper</button>
+        <button id="scissorsBtn" onclick="playRound(getUserChoice(this), getComputerChoice())">Scissors</button>
+    </div>
+    <div id="resultsDiv" class="resultsDiv"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
