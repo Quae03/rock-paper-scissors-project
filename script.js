@@ -24,7 +24,6 @@ function getUserChoice(element) {
 userChoice = element.textContent;
 
 return userChoice;
-
 };
 
 let userScore = 0;
@@ -72,3 +71,4 @@ function playRound(userChoice, computerChoice) {
         }
     }
 };
+
